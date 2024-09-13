@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ========== Button style =========== */
+
+.primary-btn {
+    color: #fff;
+    background-color: #7811ff;
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s linear;
+}
+
+.primary-btn:hover {
+    transform: translateX(10px);
+}
+
+/* ========= Responsive Navbar ========= */
+
+.nav-links {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 40vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ======= dropdown Menu ======== */
+
+.hide-menu {
+    display: none;
+}
+
+.drop-menu {
+    display: none;
+}
+
+.drop-item:hover .drop-menu {
+    display: block;
+}
