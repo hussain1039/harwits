@@ -41,7 +41,7 @@ function Navbar() {
                             <img
                                 src={Logo}
                                 alt="logo"
-                                className='w-40 md:w-44 lg:w-56'
+                                className='w-40 md:w-44 lg:w-48'
                             />
                         </NavLink>
                     </div>
