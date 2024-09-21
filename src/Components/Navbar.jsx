@@ -28,7 +28,6 @@ const dropdownMenu = [
 ]
 
 function Navbar() {
-    const [dropMenu, setDropMenu] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
     return (
         <>
@@ -55,17 +54,17 @@ function Navbar() {
                         <NavLink
                             to='/'
                             className='drop-item flex items-center relative'>
-                            Packages <IoMdArrowDropdown className='text-[23px]' />
+                            Packages <IoMdArrowDropdown className='drop-icon text-[23px]' />
 
                             {/* ========= Dropdown Menu ======== */}
                             <nav className='drop-menu absolute top-[100%] bg-[#161515] rounded w-[200px]'>
-                                <ul className={dropMenu ? 'hide-menu text-[16px] m-4 space-y-3' : 'text-[16px] p-4'}>
+                                <ul className='text-[16px] m-4 space-y-3'>
                                     {
                                         dropdownMenu.map((menu) => (
                                             <li
                                                 key={menu.id}
                                                 className='hover:text-[#7811ff] transition-all border-b-[1px] py-3 border-[#372e2e]'>
-                                                <NavLink onClick={() => setDropMenu(true)}>
+                                                <NavLink>
                                                     {menu.title}
                                                 </NavLink>
                                             </li>

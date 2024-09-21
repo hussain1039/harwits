@@ -52,3 +52,11 @@
 .drop-item:hover .drop-menu {
     display: block;
 }
+
+.drop-icon {
+    transition: all 0.2s linear;
+}
+
+.drop-item:hover .drop-icon {
+    transform: rotate(-180deg);
+}
