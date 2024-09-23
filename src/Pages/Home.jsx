@@ -1,13 +1,15 @@
 import React from 'react'
 import HeroVideo from '../Assets/main-vedio.mp4';
 import { FaArrowRight } from "react-icons/fa";
+import Curriculum from '../Components/Curriculum';
+import About from '../Components/About';
 
 function Home() {
   return (
     <>
       <div className='w-full bg-[#23042a] container py-[3rem] lg:py-[3.5rem]'>
-        <div className='text-white text-center mb-10 lg:mb-14 space-y-3 lg:space-y-5'>
-          <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
+        <div className='mb-10 space-y-3 text-center text-white lg:mb-14 lg:space-y-5'>
+          <h1 className='text-2xl font-bold sm:text-3xl lg:text-4xl'>
             Introducing HARWITS
           </h1>
           <p className='text-[16px] lg:text-[19px]'>
@@ -15,7 +17,7 @@ function Home() {
           </p>
         </div>
 
-        <div className='flex flex-col sm:flex-row justify-between'>
+        <div className='flex flex-col justify-between sm:flex-row'>
 
           {/* ======== Text Content ======== */}
           <div className='w-full px-4 sm:px-0 sm:w-[50%] text-white'>
@@ -25,7 +27,7 @@ function Home() {
             <p className='text-[16px] lg:text-[19px] my-5 lg:my-8'>
               E-commerce dropshipping has become a popular business model, especially for entrepreneurs wanting to break into the retail market without significant upfront costs. By utilizing the internet, dropshipping enables business owners to sell products directly to consumers without needing to manage any inventory.
             </p>
-            <button className='mt-8 primary-btn flex items-center gap-4 btn-shadow'>
+            <button className='flex items-center gap-4 mt-8 primary-btn btn-shadow'>
               BOOK MEETING
               <FaArrowRight />
             </button>
@@ -42,6 +44,8 @@ function Home() {
           </div>
         </div>
       </div>
+      <About />
+      <Curriculum />
     </>
   )
 }
