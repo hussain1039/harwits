@@ -42,7 +42,7 @@ const About = () => {
                     </div>
 
                     {/* ========== Image section ========== */}
-                    <div className='w-[100%]'>
+                    <div className='w-[100%] px-4 md:px-0'>
                         <img src={Shipping} alt="image" className='rounded-lg w-full' />
                     </div>
                 </div>

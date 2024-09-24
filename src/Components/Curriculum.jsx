@@ -67,27 +67,27 @@ const Curriculum = () => {
                     <h1 className='text-2xl sm:text-3xl lg:text-[2.0rem] font-bold'>What's Included</h1>
                     <p className='text-[16px] lg:text-[19px] mt-4'>Hustlers Ecommerce Curriculum</p>
                 </div>
-                <div className='flex flex-wrap gap-28'>
+                <div className='px-4 md:px-0 flex flex-col md:flex-row flex-wrap gap-16 lg:gap-28'>
                     {
                         cardData.map((data) => (
-                            <div key={data.id} className='bg-[#471f50] p-5 w-[45%] flex flex-col items-center justify-center rounded-lg btn-shadow relative'>
+                            <div key={data.id} className='bg-[#471f50] p-5 w-full md:w-[45%] flex flex-col items-center justify-center rounded-lg btn-shadow relative'>
                                 <img src={Image} alt="image" className='w-[35%]' />
                                 <div className='text-white text-center my-5'>
-                                    <h1 className='text-[1.7rem] font-bold'>{data.title}</h1>
-                                    <p className='text-center text-[17px] lg:text-[18px]'>{data.text}</p>
+                                    <h1 className='text-[1.5rem] lg:text-[1.7rem] font-bold'>{data.title}</h1>
+                                    <p className='text-center text-[16px] lg:text-[18px]'>{data.text}</p>
                                 </div>
-                                <div className='flex gap-16'>
+                                <div className='flex gap-8 lg:gap-16'>
                                     <div className='flex flex-col gap-2'>
-                                        <button className='hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[17px]'><FaFacebookF />{data.btn1}</button>
-                                        <button className='hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[17px]'><FaSnapchatGhost />{data.btn2}</button>
+                                        <button className='hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[13px] lg:text-[17px]'><FaFacebookF />{data.btn1}</button>
+                                        <button className='hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[13px] lg:text-[17px]'><FaSnapchatGhost />{data.btn2}</button>
                                     </div>
                                     <div className='flex flex-col gap-2'>
-                                        <button className=' hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[17px]'><FaInstagram />{data.btn3}</button>
-                                        <button className='hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[17px]'><FaTiktok />{data.btn4}</button>
+                                        <button className=' hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[13px] lg:text-[17px]'><FaInstagram />{data.btn3}</button>
+                                        <button className='hover:bg-[#7811ff] hover:text-[#fff] transition-all flex items-center gap-1 bg-white py-1 px-2 rounded-lg text-[13px] lg:text-[17px]'><FaTiktok />{data.btn4}</button>
                                     </div>
                                 </div>
-                                <div className='absolute top-[-25px] left-[-40px] py-2 px-6 bg-[#7811ff] rounded-full'>
-                                    <h1 className='text-white text-[18px] font-semibold'>Service {data.id}</h1>
+                                <div className='absolute top-[-25px] left-[-10px] md:left-[-25px] lg:left-[-40px] py-2 px-6 bg-[#7811ff] rounded-full'>
+                                    <h1 className='text-white text-[13px] lg:text-[18px] font-semibold'>Service {data.id}</h1>
                                 </div>
                             </div>
                         ))
