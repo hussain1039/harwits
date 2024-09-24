@@ -5,8 +5,9 @@ import { FaArrowRight } from "react-icons/fa";
 const HeroSection = () => {
     return (
         <>
-            <div className='w-full bg-[#23042a] container py-[3rem] lg:py-[3.5rem]'>
-                <div className='mb-10 space-y-3 text-center text-white lg:mb-14 lg:space-y-5'>
+            <div className='bg-[#23042a]'>
+                <div className='max-w-[1200px] mx-auto py-20'>
+                <div className='mb-5 space-y-3 text-center text-white lg:mb-10 lg:space-y-5 '>
                     <h1 className='text-2xl font-bold sm:text-3xl lg:text-4xl'>
                         Introducing HARWITS
                     </h1>
@@ -41,6 +42,8 @@ const HeroSection = () => {
                             className='w-[100%] rounded-lg'></video>
                     </div>
                 </div>
+                </div>
+               
             </div>
         </>
     )
