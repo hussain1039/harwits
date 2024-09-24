@@ -3,6 +3,7 @@ import Curriculum from '../Components/Curriculum';
 import About from '../Components/About';
 import HeroSection from '../Components/HeroSection';
 import OurMissionSection from '../Components/OurMissionSection';
+import DropShipping from '../Components/DropShipping';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <About />
       <Curriculum />
       <OurMissionSection />
+      <DropShipping />
     </>
   )
 }
