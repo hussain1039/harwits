@@ -4,6 +4,7 @@ import About from '../Components/About';
 import HeroSection from '../Components/HeroSection';
 import OurMissionSection from '../Components/OurMissionSection';
 import DropShipping from '../Components/DropShipping';
+import CounterUpSection from '../Components/CounterUpSection';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Curriculum />
       <OurMissionSection />
       <DropShipping />
+      <CounterUpSection />
     </>
   )
 }
