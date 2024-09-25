@@ -34,7 +34,7 @@ const CounterUpSection = () => {
   return (
     <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>
       <div className='bg-gradient-to-b from-[#7611fb] to-[#230a45] py-[3rem] lg:py-[3.5rem]'>
-        <div className='container flex justify-around text-center text-white'>
+        <div className='container flex justify-around flex-wrap gap-3 sm:gap-0 text-center text-white'>
           {
             data.map((data) => {
               return (
