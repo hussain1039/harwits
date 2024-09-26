@@ -15,16 +15,16 @@ const features = [
 
 const About = () => {
     return (
-        <>
-            <div className='w-full bg-[#290532] container py-[3rem] lg:py-[3.5rem]'>
-                <div className='text-center text-white mb-10 lg:mb-14'>
+        <div className='bg-[#290532]'>
+            <div className='w-[1200px] mx-auto   py-[3rem] lg:py-[3.5rem]'>
+                <div className='mb-10 text-center text-white lg:mb-14'>
                     <h1 className='text-2xl sm:text-3xl lg:text-[2.0rem] font-bold'>ABOUT US</h1>
                 </div>
-                <div className='flex flex-col md:flex-row items-center gap-10'>
+                <div className='flex flex-col items-center gap-10 md:flex-row'>
 
                     {/* ========== Text Content ========== */}
                     <div className='px-5 text-center md:text-start'>
-                        <h1 className='text-2xl lg:text-3xl font-semibold text-white'>Transforming Vision into Reality</h1>
+                        <h1 className='text-2xl font-semibold text-white lg:text-3xl'>Transforming Vision into Reality</h1>
                         <p className='mt-5 lg:mt-7 text-white text-[17px] lg:text-[19px]'>
                             At HARWITS, we focus on helping businesses grow with smart Digital Solutions. Our skilled team offers a full spectrum of services, from website development and digital marketing to e-commerce & essentials like Graphic Designing & Video Editing. We create bespoke solutions that empower businesses to excel and stand out in a crowded marketplace.
                         </p>
@@ -35,7 +35,7 @@ const About = () => {
                                 ))
                             }
                         </div>
-                        <button className='mt-8 primary-btn flex items-center gap-4 btn-shadow'>
+                        <button className='flex items-center gap-4 mt-8 primary-btn btn-shadow'>
                             CLAIM YOUR SPOT
                             <FaArrowRight />
                         </button>
@@ -43,11 +43,11 @@ const About = () => {
 
                     {/* ========== Image section ========== */}
                     <div className='w-[100%] px-4 md:px-0'>
-                        <img src={Shipping} alt="image" className='rounded-lg w-full' />
+                        <img src={Shipping} alt="image" className='w-full rounded-lg' />
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

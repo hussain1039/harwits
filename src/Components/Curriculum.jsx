@@ -61,18 +61,18 @@ const cardData = [
 
 const Curriculum = () => {
     return (
-        <>
-            <div className='w-full bg-[#290532] container py-[3rem] lg:py-[3.5rem]'>
-                <div className='text-center text-white mb-20 lg:mb-14'>
+        <div className='bg-[#290532]'>
+            <div className='w-[1200px] mx-auto py-[3rem] lg:py-[3.5rem]'>
+                <div className='mb-20 text-center text-white lg:mb-14'>
                     <h1 className='text-2xl sm:text-3xl lg:text-[2.0rem] font-bold'>What's Included</h1>
                     <p className='text-[16px] lg:text-[19px] mt-4'>Hustlers Ecommerce Curriculum</p>
                 </div>
-                <div className='px-4 md:px-0 flex flex-col md:flex-row flex-wrap gap-16 lg:gap-28'>
+                <div className='flex flex-col flex-wrap gap-16 px-4 md:px-0 md:flex-row lg:gap-28'>
                     {
                         cardData.map((data) => (
                             <div key={data.id} className='bg-[#471f50] p-5 w-full md:w-[45%] flex flex-col items-center justify-center rounded-lg btn-shadow relative'>
                                 <img src={Image} alt="image" className='w-[35%]' />
-                                <div className='text-white text-center my-5'>
+                                <div className='my-5 text-center text-white'>
                                     <h1 className='text-[1.5rem] lg:text-[1.7rem] font-bold'>{data.title}</h1>
                                     <p className='text-center text-[16px] lg:text-[18px]'>{data.text}</p>
                                 </div>
@@ -94,7 +94,7 @@ const Curriculum = () => {
                     }
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

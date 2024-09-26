@@ -33,9 +33,9 @@ const divData = [
 
 const OurMissionSection = () => {
     return (
-        <>
-            <div className='w-full bg-[#290532] container py-[3rem] lg:py-[3.5rem]'>
-                <div className='flex flex-col md:flex-row justify-between'>
+        <div className='bg-[#290532]'>
+            <div className='w-[1200px]  mx-auto py-[3rem] lg:py-[3.5rem]'>
+                <div className='flex flex-col justify-between md:flex-row'>
 
                     {/* ======== Left Container ======= */}
                     <div className='flex flex-col justify-start items-start gap-4 w-full md:w-[40%] px-4 md:px-0 lg:w-[45%] text-white'>
@@ -67,7 +67,7 @@ const OurMissionSection = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
