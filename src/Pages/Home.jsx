@@ -6,6 +6,7 @@ import OurMissionSection from '../Components/OurMissionSection';
 import DropShipping from '../Components/DropShipping';
 import CounterUpSection from '../Components/CounterUpSection';
 import PricingSection from '../Components/PricingSection';
+import PracticeCounter from '../Components/PracticeCounter';
 
 function Home() {
   return (
@@ -15,7 +16,8 @@ function Home() {
       <Curriculum />
       <OurMissionSection />
       <DropShipping />
-      <CounterUpSection />
+      {/* <CounterUpSection /> */}
+      <PracticeCounter />
       <PricingSection />
     </>
   )
